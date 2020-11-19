@@ -8,7 +8,7 @@
 #define LPIN_G 8
 #define LPIN_B 9
 
-ColourLED cLED1(LPIN_R, LPIN_G, LPIN_B);
+TriColourLED cLED1(LPIN_R, LPIN_G, LPIN_B);
 
 void setup(){
     cLED1.setColour(CYAN);

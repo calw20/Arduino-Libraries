@@ -12,8 +12,8 @@
 #define LPING_2 25
 #define LPINB_2 27
 
-ColourLED cLED1(LPINR_1, LPING_1, LPINB_1);
-ColourLED cLED2(LPINR_2, LPING_2, LPINB_2);
+TriColourLED cLED1(LPINR_1, LPING_1, LPINB_1);
+TriColourLED cLED2(LPINR_2, LPING_2, LPINB_2);
 
 void setup(){
     cLED1.setColour(CYAN);

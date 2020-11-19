@@ -31,7 +31,7 @@ LEDColours LED::getColour(){
 
 
 //TriColour
-ColourLED::ColourLED(int sPinR, int sPinG, int sPinB){
+TriColourLED::TriColourLED(int sPinR, int sPinG, int sPinB){
     pinR = sPinR;
     pinG = sPinG;
     pinB = sPinB;
@@ -43,7 +43,7 @@ ColourLED::ColourLED(int sPinR, int sPinG, int sPinB){
     setColour(currentColour);
 }
 
-bool ColourLED::setColour(LEDColours newColour){
+bool TriColourLED::setColour(LEDColours newColour){
     currentColour = newColour;
     digitalWrite(pinR, (currentColour & B100));
     digitalWrite(pinG, (currentColour & B010));
