@@ -18,7 +18,7 @@ LED::LED(int sPin, LEDColours sColour){
 bool LED::setColour(LEDColours newColour){
     //Ignore calls to change it to green if its a red led
     //This can be done due to the way the LEDColours is defined
-    currentColour = newColour & colour;
+    currentColour = static_cast<LEDColours>(newColour & colour);
     
     pinMode(pin, currentColour);
 
@@ -31,7 +31,7 @@ LEDColours LED::getColour(){
 
 
 //TriColour
-TriColourLED::TriColourLED(int sPinR, int sPinG, int sPinB){
+TriColourLED::TriColourLED(int sPinR, int sPinG, int sPinB) : LED(0, WHITE){
     pinR = sPinR;
     pinG = sPinG;
     pinB = sPinB;
