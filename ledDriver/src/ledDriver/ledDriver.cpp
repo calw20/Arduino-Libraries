@@ -6,7 +6,7 @@
 #include "ledDriver.h"
 
 //MonoColour
-LED:: LED(int sPin, LEDColours sColour){
+LED::LED(int sPin, LEDColours sColour){
     pin = sPin;
     colour = sColour;
     

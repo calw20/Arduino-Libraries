@@ -29,7 +29,7 @@ class LED {
         bool setColour(LEDColours newColour);
     
     private:
-        int pin
+        int pin;
         LEDColours currentColour = LEDColours::BLACK;
         LEDColours colour = LEDColours::WHITE; //Will basically only work on B/W
 };
