@@ -22,8 +22,7 @@ enum LEDColours {
 
 class LED {
     public:
-        LED(int sPin, LEDColours sColour = RED);     
-        bool init(); 
+        LED(int sPin, LEDColours sColour = RED);
     
     public:
         LEDColours getColour();
@@ -42,7 +41,6 @@ class BiColourLED: public LED {
         bool init(); 
     
     public:
-        LEDColours getColour();
         bool setColour(LEDColours newColour);
 
     private:
@@ -56,7 +54,6 @@ class TriColourLED: public LED {
         bool init(); 
     
     public:
-        LEDColours getColour();
         bool setColour(LEDColours newColour);
 
     private:
