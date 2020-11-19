@@ -32,7 +32,7 @@ class LED {
         int pin
         LEDColours currentColour = LEDColours::BLACK;
         LEDColours colour = LEDColours::WHITE; //Will basically only work on B/W
-}
+};
 
 /*[TODO] Implement BiColour LED's
 class BiColourLED: public LED {
