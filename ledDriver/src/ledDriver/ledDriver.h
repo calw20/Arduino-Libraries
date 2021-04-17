@@ -28,9 +28,11 @@ class LED {
         LEDColours getColour();
         bool setColour(LEDColours newColour);
     
+    protected:
+        LEDColours currentColour = LEDColours::BLACK;
+    
     private:
         int pin;
-        LEDColours currentColour = LEDColours::BLACK;
         LEDColours colour = LEDColours::WHITE; //Will basically only work on B/W
 };
 
@@ -58,7 +60,7 @@ class TriColourLED: public LED {
 
     private:
         int pinR, pinG, pinB;
-        LEDColours currentColour = LEDColours::BLACK;
+        //LEDColours currentColour = LEDColours::BLACK;
 };
 
 #endif
